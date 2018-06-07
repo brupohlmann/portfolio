@@ -4,6 +4,15 @@ body {
     margin-right: 0;
 }
 
+#Github {
+    /*  tamanho do  elemento    =   imagem  */
+    height: 32px;
+    width: 32px;
+    /*  imagem  como    fundo   */
+    background-image: url(../images/icons/github.png);";
+    float: right;
+}
+
 header {
     background-color: #BC8F8F;
     margin-top: 0;
@@ -16,7 +25,7 @@ header #titulo {
     text-align: center;
     font-size: 60px;
     font-family: "Verdana";
-    color: #DC143C;
+    color: #B22222;
     padding-top: 140px;
 }
 
@@ -39,6 +48,15 @@ header #titulo {
     padding: 25px;
     letter-spacing: 2px;
 }
+#about li {
+    list-style-type: none;
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 20px;
+    color: #696969;
+}
 
 h2 {
     text-align: center;
@@ -49,11 +67,16 @@ h2 {
     letter-spacing: 2px;
 }
 
-p {
+#textos {
+    font-family: "Verdana";
+    font-size: 20px;
+    color: #696969;
+    padding: 60px 50px;
 
 }
-/* para tirar o sublinado e o azul dos links */
+
 a {
+    /* para tirar o sublinado e o azul dos links */
     color: inherit;
     text-decoration: none;
 }

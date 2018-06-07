@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Bruna Ferreira</title>
   <meta charset="utf-8">
-
+  <!-- tag da css pro Django abaixo -->
   <link rel="stylesheet" href="theme/css/main.css">
   <!--[if lt  IE  9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+<!-- botao de voltar ao topo -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 200) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
 </head>
 
 <body>
+<p id="Github"><a href="https://github.com/brupohlmann">Github</a></p>
   <header>
     <h1 id="titulo">Bruna Ferreira</h1>
   </header>
@@ -24,7 +49,9 @@
   </div>
 
 
-  <h2 id="Sobre">Sobre</h2>
+  <h2 id="Sobre mim">Sobre</h2>
+<p id="textos">Mesmo amante dos computadores e da tecnologia desde muito cedo, somente agora veio a coragem e o ingresso na faculdade de T.I. Mas acredito que a maturidade, a experiência profissional e a bagagem cultural possam ser incrivelmente uteis nessa nova jornada!</p>
+<p id="textos">Meus hobbies são: programação, tecnologia, música, leitura e viagens.</p>
 
   <h2 id="Habilidades">Skills</h2>
 
@@ -33,6 +60,10 @@
   <h2 id="Onde estou">Onde estou</h2>
 
   <footer>
+
+<a id="subirTopo">
+  ^ <br> subir
+</a>
 
   </footer>
 </body>
