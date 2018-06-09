@@ -1,7 +1,9 @@
 body {
     background-color: #FFFFF0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Verdana", sans-serif;
+
 }
 
 #Github {
@@ -9,70 +11,112 @@ body {
     height: 32px;
     width: 32px;
     /*  imagem  como    fundo   */
-    background-image: url(../images/icons/github.png);";
-    float: right;
+    right: 5px;
+    top: 5px;
+    position: absolute;
 }
 
 header {
+    position: static;
     background-color: #BC8F8F;
     margin-top: 0;
     padding-bottom: 10px;
-    height: 400px;
+    width: 100vw;
+    height: 65vh;
 
 }
 
 header #titulo {
     text-align: center;
     font-size: 60px;
-    font-family: "Verdana";
     color: #B22222;
-    padding-top: 140px;
+    padding-top: 150px;
 }
 
 #menu {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 50px;
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 20px;
 }
 
 #menu li {
-    font-family: "Verdana";
-    display: inline-block;
+        display: inline-block;
     text-align: center;
     font-size: 25px;
     color: #708090;
     padding: 25px;
     letter-spacing: 2px;
 }
-#about li {
-    list-style-type: none;
-    padding: 25px;
-    display: inline-block;
-    text-align: center;
-    font-family: "Verdana";
-    font-size: 20px;
-    color: #696969;
+/* foto about */
+#about {
+    float: right;
+    margin: 0 80px 0 1px;
+    opacity: .8;
+
 }
 
 h2 {
     text-align: center;
-    font-family: "Verdana";
     font-size: 25px;
     color: #708090;
-    padding: 5px;
+    padding: 50px 0 0 10px;
     letter-spacing: 2px;
 }
 
-#textos {
-    font-family: "Verdana";
-    font-size: 20px;
-    color: #696969;
-    padding: 60px 50px;
+div #sobre #habilidades #cursos #onde {
+    height: 100vh;
+    position: relative;
 
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+
+}
+
+/* texto ao lado da imagem no sobre */
+.texto1 {
+    font-size: 18px;
+    color: #696969;
+    padding: 10px 0px 0px 150px;
+}
+
+/* outros textos */
+.textos {
+    font-size: 18px;
+    color: #696969;
+    padding: 10px 80px 80px 150px;
+
+}
+#cursos {
+    padding: 10px 80px 80px 150px;
+}
+
+#cursos li {
+    list-style-type: "U+221A";
+    list-style-position: inside;
+    font-size: 18px;
+    color: #696969;
+
+}
+
+#contato {
+    text-align: justify;
+
+}
+
+#contato li {
+    list-style-type: none;
+    padding: 10px 80px 10px 150px;
+
+    font-size: 18px;
+    color: #696969;
 }
 
 a {
@@ -97,9 +141,9 @@ text-transform: uppercase;
 position: fixed;
 border: 0;
 font-family: sans-serif;
-opacity: .8;
+opacity: .7;
 }
 
 #subirTopo:hover {
-opacity:1;
+opacity:.8;
 }
