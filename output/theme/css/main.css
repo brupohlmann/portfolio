@@ -162,6 +162,19 @@ height: 50vh;
 width: 100vw;
 }
 
+header #titulo {
+    text-align: center;
+    font-size: 30px;
+    color: #B22222;
+    padding-top: 100px;
+}
+
+#about {
+    float: center;
+    margin: 20px 20px 20px 20px;
+    opacity: .9;
+}
+
 .texto1, .textos, #cursos li, #contato li  {
 font-size: 14px;
 }
