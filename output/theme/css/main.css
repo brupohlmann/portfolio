@@ -11,8 +11,8 @@ body {
     height: 32px;
     width: 32px;
     /*  imagem  como    fundo   */
-    right: 5px;
-    top: 5px;
+    right: 0px;
+    top: 0px;
     position: absolute;
 }
 
@@ -20,7 +20,7 @@ body {
 header {
     position: static;
     background-color: #BC8F8F;
-    margin-top: 0;
+    margin: 0;
     padding-bottom: 10px;
     width: 100vw;
     height: 65vh;
@@ -31,7 +31,7 @@ header #titulo {
     text-align: center;
     font-size: 60px;
     color: #B22222;
-    padding-top: 150px;
+    padding-top: 25vh;
 }
 
 #menu {
