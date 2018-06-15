@@ -1,9 +1,6 @@
 body {
     background-color: #FFFFF0;
-    margin-left: auto;
-    margin-right: auto;
     font-family: "Verdana", sans-serif;
-
 }
 
 #Github {
@@ -55,8 +52,6 @@ header #titulo {
 }
 /* foto about */
 #about {
-    float: right;
-    margin: 0 80px 0 1px;
     opacity: .8;
 
 }
@@ -72,31 +67,32 @@ h2 {
 div #sobre #habilidades #cursos #onde {
     height: 100vh;
     position: relative;
+}
 
+#cursos {
+    padding-left: 0;
+}
+
+figure .me {
+    width: 100%;
 }
 
 figcaption {
     font-size: 12px;
     text-align: center;
-
 }
 
 /* texto ao lado da imagem no sobre */
 .texto1 {
     font-size: 18px;
     color: #696969;
-    padding: 10px 0px 0px 150px;
 }
 
 /* outros textos */
 .textos {
     font-size: 18px;
     color: #696969;
-    padding: 10px 80px 80px 150px;
 
-}
-#cursos {
-    padding: 10px 80px 80px 150px;
 }
 
 #cursos li {
@@ -109,12 +105,14 @@ figcaption {
 
 #contato {
     text-align: justify;
+    padding-left: 190px;
 
 }
 
 #contato li {
     list-style-type: none;
-    padding: 10px 80px 10px 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-size: 18px;
     color: #696969;
@@ -152,31 +150,32 @@ opacity:.8;
 
 /* inicio do css para mobile */
 
-@media (max-width: 320px) {
+@media (max-width: 530px) {
 
-body {
+    body {
 
-}
-header {
-height: 50vh;
-width: 100vw;
-}
+    }
+    header {
+    height: 50vh;
+    width: 100vw;
+    }
 
-header #titulo {
-    text-align: center;
-    font-size: 30px;
-    color: #B22222;
-    padding-top: 100px;
-}
+    header #titulo {
+        text-align: center;
+        font-size: 30px;
+        color: #B22222;
+        padding-top: 100px;
+    }
 
-#about {
-    float: center;
-    margin: 20px 20px 20px 20px;
-    opacity: .9;
-}
+    #about {
+        opacity: .9;
+    }
 
-.texto1, .textos, #cursos li, #contato li  {
-font-size: 14px;
-}
+    .texto1, .textos, #cursos li, #contato li  {
+        font-size: 14px;
+    }
 
+    #contato {
+        padding-left: 0;
+    }
 }

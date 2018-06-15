@@ -3,7 +3,8 @@
 <head>
 
     <meta name=description content="Bruna Pohlmann Ferreira">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="theme/css/bootstrap.grid.css">
     <link rel="stylesheet" href="theme/css/bootstrap.css">
@@ -41,46 +42,56 @@ jQuery(window).scroll(function () {
 </head>
 <body>
    <div id="Github"><a href="https://github.com/brupohlmann"><img src="theme/images/icons/github.png" alt="Github"></a></div>
-  <header class="container-fluid">
+  <header class="container">
     <h1 id="titulo">Bruna Pohlmann Ferreira</h1>
   </header>
-  <div id="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#Sobre">Sobre</a></li>
-    <li><a href="#Habilidades">Skills</a></li>
-    <li><a href="#Cursos">Cursos</a></li>
-    <li><a href="#Onde">Onde estou</a></li>
+  <nav class="container">
+    <div id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#Sobre">Sobre</a></li>
+      <li><a href="#Habilidades">Skills</a></li>
+      <li><a href="#Cursos">Cursos</a></li>
+      <li><a href="#Onde">Onde estou</a></li>
+    </div>
+  </nav>
+
+
+  <div id="Sobre" class="container">
+    <h2>Sobre</h2>
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-8">
+        <p class="texto1">Mesmo amante dos computadores e da tecnologia desde muito cedo, somente agora veio a coragem para o ingresso na faculdade de T.I. Mas acredito que a maturidade, a experiência profissional e a bagagem cultural possam ser incrivelmente uteis nessa jornada!</p>
+        <p class="textos">Meus hobbies são: programação, tecnologia, música, leitura e viagens.</p>
+      </div>
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
+        <figure id="about">
+          <img src="theme/images/imagem_aboutme.jpg" class="me">
+          <figcaption>Meu segundo PC!</figcaption>
+        </figure>
+      </div>
+    </div>
   </div>
 
-
-  <div id="Sobre"><h2>Sobre</h2>
-    <figure id="about">
-      <img src="theme/images/imagem_aboutme.jpg"><figcaption>Meu segundo PC!</figcaption>
-    </figure>
-    <p class="texto1">Mesmo amante dos computadores e da tecnologia desde muito cedo, somente agora veio a coragem para o ingresso na faculdade de T.I. Mas acredito que a maturidade, a experiência profissional e a bagagem cultural possam ser incrivelmente uteis nessa jornada!</p>
-    <p class="textos">Meus hobbies são: programação, tecnologia, música, leitura e viagens.</p>
-</div>
-
-  <div id="Habilidades"><h2>Skills</h2>
+  <div id="Habilidades" class="container">
+    <h2>Skills</h2>
     <ul id="cursos">
       <li>Aprendendo: Python, Pelican e Django. HTML, CSS, JavaScript e Bootstrap. Github.</li>
       <li>Noções em: SQLite</li>
     </ul>
 
-</div>
+  </div>
 
-<div>
-  <h2 id="Cursos">Cursos</h2>
+  <div id="Cursos" class="container">
+    <h2>Cursos</h2>
     <ul id="cursos">
       <li>Graduação: Sistemas de Informação - EAD em andamento</li>
       <li>Workshop: Django Girls Niterói, edição de maio/2018</li>
       <li>Code Academy: Python, HTML, CSS</li>
       <li>Extras: Apostilas da Caelum, app Grasshoper, e muita pesquisa!</li>
+    </ul>
+  </div>
 
-</div>
-
-
-<div id="Onde"><h2>Onde estou</h2>
+<div id="Onde" class="container"><h2>Onde estou</h2>
   <ul id="contato">
     <li><img src="theme/images/icons/email.png" alt="e-mail"> brupohlmann@gmail.com</li>
     <li><img src="theme/images/icons/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/in/bpohlmannferreira/">Linked in</a></li>
@@ -91,9 +102,9 @@ jQuery(window).scroll(function () {
 
   <footer>
 
-<a id="subirTopo">
-  ^ <br> subir
-</a>
+    <a id="subirTopo">
+      ^ <br> subir
+    </a>
 
   </footer>
 <script type="text/javascript" scr="theme/jss/bootstrap.js"></script>
