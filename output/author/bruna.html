@@ -1,39 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Bruna Ferreira</title>
-  <meta charset="utf-8">
-  <!-- tag da css pro Django abaixo -->
-  <link rel="stylesheet" href="css/main.css">
-  <!--[if lt  IE  9]>
+
+    <meta name=description content="Bruna Pohlmann Ferreira">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="theme/css/bootstrap.grid.css">
+    <link rel="stylesheet" href="theme/css/bootstrap.css">
+    <link rel="stylesheet" href="theme/css/main.css">
+    <title>Bruna Pohlmann Ferreira</title>
+      <!--[if lt  IE  9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-</head>
+<!-- botao de voltar ao topo -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
 
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 200) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+<!-- fim do botao de voltar ao topo -->
+
+</head>
 <body>
-  <header>
-    <h1 id="titulo">Bruna Ferreira</h1>
+   <div id="Github"><a href="https://github.com/brupohlmann"><img src="theme/images/icons/github.png" alt="Github"></a></div>
+  <header class="container">
+    <h1 id="titulo">Bruna Pohlmann Ferreira</h1>
   </header>
-  <div id="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#Sobre">Sobre</a></li>
-    <li><a href="#Habilidades">Skills</a></li>
-    <li><a href="#Cursos">Cursos</a></li>
-    <li><a href="#Onde estou">Onde estou</a></li>
+  <nav class="container">
+    <div id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#Sobre">Sobre</a></li>
+      <li><a href="#Habilidades">Skills</a></li>
+      <li><a href="#Cursos">Cursos</a></li>
+      <li><a href="#Onde">Onde estou</a></li>
+    </div>
+  </nav>
+
+
+  <div id="Sobre" class="container">
+    <h2>Sobre</h2>
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-8">
+        <p class="texto1">Mesmo amante dos computadores e da tecnologia desde muito cedo, somente agora veio a coragem para o ingresso na faculdade de T.I. Mas acredito que a maturidade, a experiência profissional e a bagagem cultural possam ser incrivelmente uteis nessa jornada!</p>
+        <p class="textos">Meus hobbies são: programação, tecnologia, música, leitura e viagens.</p>
+      </div>
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
+        <figure id="about">
+          <img src="theme/images/imagem_aboutme.jpg" class="me">
+          <figcaption>Meu segundo PC!</figcaption>
+        </figure>
+      </div>
+    </div>
   </div>
 
+  <div id="Habilidades" class="container">
+    <h2>Skills</h2>
+      <p class="textos">Aprendendo:</p>
+      <ul id="lista">
+        <li>HTML, CSS, JavaScript e Bootstrap</li>
+        <li>Python</li>
+        <li>Pelican e Django</li>
+        <li>Github</li>
+        <li>Elixir</li>
+        <li>DialogFlow</li>
+      </ul>
+      <p class="textos">Noções em:</p>
+      <ul id="lista">
+        <li>SQLite</li>
+        <li>Docker</li>
+        <li>Métodos Ágeis</li>
+        <li>Solid</li>
+    </ul>
 
-  <h2 id="Sobre mim">Sobre</h2>
+  </div>
 
-  <h2 id="Habilidades">Skills</h2>
+  <div id="Cursos" class="container">
+    <h2>Cursos</h2>
+    <ul id="lista">
+      <li>Graduação: Sistemas de Informação - EAD em andamento</li>
+      <li>Meet Up: Django Girls Niterói, edição de maio/2018: criação de um blog</li>
+      <li>Meet Up: AI Brasil no Rio de Janeiro #2 - Chatbot e Online Learning na prática</li>
+      <li>Code Academy: Python, HTML, CSS</li>
+      <li>Extras: Apostilas da Caelum, app Grasshoper, e muita pesquisa!</li>
+    </ul>
+  </div>
 
-  <h2 id="Cursos">Cursos</h2>
-
-  <h2 id="Onde estou">Onde estou</h2>
+<div id="Onde" class="container"><h2>Onde estou</h2>
+  <ul id="contato">
+    <li><img src="theme/images/icons/email.png" alt="e-mail"> brupohlmann@gmail.com</li>
+    <li><img src="theme/images/icons/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/in/bpohlmannferreira/">Linked in</a></li>
+    <li><img src="theme/images/icons/stackoverflow.png" alt="stackoverflow"><a href="https://stackoverflow.com/users/9714585/bruna-ferreira">Stack Overflow</a></li>
+    <li><img src="theme/images/icons/codeacademy.png" alt="CodeAcademy"><a href="https://www.codecademy.com/brupohlmann">Code Academy</a></li>
+  </ul>
+</div>
 
   <footer>
 
+    <a id="subirTopo">
+      ^ <br> subir
+    </a>
+
   </footer>
+<script type="text/javascript" scr="theme/jss/bootstrap.js"></script>
+
 </body>
 </html>
